@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Ripple",
+    "slug": "ripple",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "ripple",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ripple.mobile"
+    },
+    "android": {
+      "package": "com.ripple.mobile"
+    },
+    "extra": {
+      "apiUrl": "http://localhost:4000/api/v1"
+    }
+  }
+}

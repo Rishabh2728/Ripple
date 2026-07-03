@@ -1,0 +1,27 @@
+{
+  "name": "ripple",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Ripple community and messaging platform.",
+  "workspaces": [
+    "backend",
+    "mobile",
+    "website"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w backend",
+    "dev:mobile": "npm run start -w mobile",
+    "dev:website": "npm run dev -w website",
+    "build": "npm run build -w backend && npm run build -w website",
+    "lint": "npm run lint -w backend && npm run lint -w mobile && npm run lint -w website",
+    "typecheck": "npm run typecheck -w backend && npm run typecheck -w mobile && npm run typecheck -w website",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md,css}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
