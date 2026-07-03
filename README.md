@@ -74,6 +74,14 @@ npm run dev:website
 
 Initial API documentation lives in [docs/API.md](docs/API.md). Endpoint-level documentation will be expanded as each feature milestone is implemented.
 
+Implemented backend endpoints:
+
+- `GET /api/v1/health`
+- `POST /api/v1/auth/register`
+- `POST /api/v1/auth/login`
+- `GET /api/v1/auth/me`
+- `POST /api/v1/auth/logout`
+
 ## Deployment
 
 - Backend: Render.
